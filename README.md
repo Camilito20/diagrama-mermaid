@@ -1,29 +1,17 @@
-graph TD
-    A["A<br>14"] --> B["B<br>14"]
-    B --> C["C<br>21"]
-    C --> D["D<br>28"]
-    C --> E["E<br>21"]
-    D --> F["F<br>21"]
-    E --> F
-    E --> H["H<br>28"]
-    F --> G["G<br>35"]
-    F --> J["J<br>14"]
-    F --> L["L<br>42"]
-    G --> I["I<br>21"]
-    H --> K["K<br>14"]
-    I --> K
-    J --> K
-    K --> M["M<br>7"]
-    L --> M
-    M --> N["N<br>14"]
+```mermaid
+graph LR
+    A((1)) -->|7| B((2))
+    A -->|7| C((3))
 
-    style A fill:#ffcccc,stroke:#333,stroke-width:2px
-    style B fill:#ffcccc,stroke:#333,stroke-width:2px
-    style C fill:#ffcccc,stroke:#333,stroke-width:2px
-    style D fill:#ffcccc,stroke:#333,stroke-width:2px
-    style F fill:#ffcccc,stroke:#333,stroke-width:2px
-    style G fill:#ffcccc,stroke:#333,stroke-width:2px
-    style I fill:#ffcccc,stroke:#333,stroke-width:2px
-    style K fill:#ffcccc,stroke:#333,stroke-width:2px
-    style M fill:#ffcccc,stroke:#333,stroke-width:2px
-    style N fill:#ffcccc,stroke:#333,stroke-width:2px
+    B -->|7| D((4))
+    C -->|7| D
+
+    D -->|7| E((5))
+    E -->|7| F((6))
+
+    F -->|14| G((11))
+    G -->|14| H((12))
+    H -->|14| I((13))
+    I -->|7| J((14))
+    J -->|7| K((19))
+```
